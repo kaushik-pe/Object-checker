@@ -1,0 +1,20 @@
+{
+  "name": "object_checker",
+  "version": "0.0.1",
+  "description": "Compare two objects",
+  "main": "index.js",
+  "preferGlobal": true,
+  "author": {
+    "name": "Kaushik Kumaran"
+  },
+  "license": "MIT",
+  "keywords": [
+    "Object Compare",
+    "Object Equal"
+  ],
+  "readmeFilename": "Readme.md",
+  "readme": "## Features\r\n\r\n- HasAllPropertyAs - Checks if both the objects have the same properties\r\n- ObjCompare - Checks if two objects are equal i.e; copies of one another\r\n\r\n## Installation\r\n\r\n```bash    \r\n    npm install Object_Checker\r\n```\r\n## How to use\r\n  ```javascript\r\n     /*Comparing Pre-defined Objects*/\r\n     var prop = require('object_checker');\r\n     var a = new String('1');\r\n     var b = new String('2');\r\n     var c=  new String('1') \r\n     console.log(prop.HasAllPropertyAs(a,b));//returns true\r\n     console.log(prop.ObjCompare(a,b));//returns false\r\n     console.log(prop.ObjCompare(a,c));//returns true\r\n     /*Note: Pre-Defined Objects can be tested only if they are defined*/\r\n     /*Comparing Pre-defined Objects*/\r\n     var a ={\r\n        name:\"kaushik\";\r\n        roll_no:\"1123\";\r\n     }\r\n     var b ={\r\n         name:\"kaushik\";\r\n         roll_no:\"1123\";\r\n     }\r\n     var c ={\r\n         name:\"kaushik.p.e\";\r\n         roll_no:\"1123\";\r\n     }\r\n     console.log(prop.HasAllPropertyAs(a,b));//returns true\r\n     console.log(prop.HasAllPropertyAs(a,c));//returns true\r\n     console.log(prop.ObjCompare(a,b));//returns true\r\n     console.log(prop.ObjCompare(a,c));//returns false\r\n    ```\r\n## Credits\r\n\r\n- Kaushik Kumaran (https://www.facebook.com/kaushik.kumaran1)\r\n\r\n## License \r\n\r\n(The MIT License)\r\n\r\nCopyright (c) 2015 Soliton Technologies;\r\n\r\nPermission is hereby granted, free of charge, to any person obtaining\r\na copy of this software and associated documentation files (the\r\n'Software'), to deal in the Software without restriction, including\r\nwithout limitation the rights to use, copy, modify, merge, publish,\r\ndistribute, sublicense, and/or sell copies of the Software, and to\r\npermit persons to whom the Software is furnished to do so, subject to\r\nthe following conditions:\r\n\r\nThe above copyright notice and this permission notice shall be\r\nincluded in all copies or substantial portions of the Software.\r\n\r\nTHE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,\r\nEXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF\r\nMERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.\r\nIN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY\r\nCLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,\r\nTORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE\r\nSOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.",
+  "_id": "object_checker@0.0.1",
+  "_shasum": "f3426f20f3f374d50f4ab89b7dea04d3df4fdfdf",
+  "_from": "object_checker@"
+}
